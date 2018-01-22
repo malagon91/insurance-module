@@ -1,0 +1,8 @@
+run migration
+
+php artisan migrate
+
+php artisan make:auth
+*- create a login module
+Errors
+(sudo a2enmod rewrite) to run login
