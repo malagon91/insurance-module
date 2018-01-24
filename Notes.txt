@@ -6,3 +6,10 @@ php artisan make:auth
 *- create a login module
 Errors
 (sudo a2enmod rewrite) to run login
+
+
+################################################CSS
+To can convert scss to css
+npm i
+npm run watch
+################################################CSS
