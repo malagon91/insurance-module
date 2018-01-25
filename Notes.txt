@@ -7,9 +7,20 @@ php artisan make:auth
 Errors
 (sudo a2enmod rewrite) to run login
 
+revert migration
+php artisan migrate:rollback
+
+create model
+(The table must be name equal that the model but in plural customers (table) => Customer (model))
+php artisan make:model Customer
+
+with this command I can generate a controller resource to can use restFull
+php artisan make:controller CustomersController --resource
 
 ################################################CSS
 To can convert scss to css
 npm i
 npm run watch
 ################################################CSS
+model and migration
+php artisan make:model ShoppingCart –m

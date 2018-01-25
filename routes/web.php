@@ -18,7 +18,17 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+// model, controller
+Route::resource('customers','CustomersController');
 
-
+/*
+ * GET /customers => index
+ * POST /customers => store
+ * GET /customers/create => form to build a new customer
+ * GET /customers/:id => Show product by Id
+ * GET /customers/:id/edit =>  edition form
+ * PUT/PATCH /customers/:id =>  Save editing product
+ * DELETE /customers/:id =>  remove customer
+ */
 
 Route::get('/home', 'HomeController@index')->name('home');
