@@ -44,8 +44,22 @@
 
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
-                    <ul class="nav navbar-nav">
-                        &nbsp;
+                    <ul class="nav navbar-nav margin-left">
+                        @guest
+                        @else
+                            <li><a href="{{url('/customers')}}">Clientes</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                    Productos <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="{{url('/customers')}}">Carros</a></li>
+                                    <li><a href="{{url('/customers')}}">Seguros de Vida</a></li>
+                                </ul>
+                            </li>
+                            &nbsp;<li><a href="{{url('/customers')}}">Clientes</a></li>
+                        @endguest
                     </ul>
 
                     <!-- Right Side Of Navbar -->
