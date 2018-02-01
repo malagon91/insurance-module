@@ -10,6 +10,7 @@
                 <td>ID</td>
                 <td>Name</td>
                 <td>Esquema</td>
+                <td>Date of Birthday</td>
                 <td>RFC</td>
                 <td>Curp</td>
                 <td>Acciones</td>

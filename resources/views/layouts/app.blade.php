@@ -49,16 +49,18 @@
                         @else
                             <li><a href="{{url('/customers')}}">Clientes</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true" aria-haspopup="true">
                                     Productos <span class="caret"></span>
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li><a href="{{url('/customers')}}">Carros</a></li>
-                                    <li><a href="{{url('/customers')}}">Seguros de Vida</a></li>
+                                    <li><a href="{{url('/cars')}}">Carros</a></li>
+                                    <li><a href="{{url('/lives')}}">Seguros de Vida</a></li>
+                                    <li><a href="{{url('/medicals')}}">Gastos Medicos Mayores</a></li>
+                                    <li><a href="{{url('/civils')}}">Responsabilidad civil</a></li>
                                 </ul>
                             </li>
-                            &nbsp;<li><a href="{{url('/customers')}}">Clientes</a></li>
+                            &nbsp;<li><a href="{{url('/customers')}}">Concentrados</a></li>
                         @endguest
                     </ul>
 
@@ -97,6 +99,12 @@
     <script>
         $.material.init();
     </script>
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+    </script>
+
 
     <script src="{{ asset('js/app.js') }}"></script>
 </body>
